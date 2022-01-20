@@ -1,0 +1,179 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>House Sale Price</title>    
+        <link rel="stylesheet" href="static\css\style.css">
+    </head>
+    
+    <body background="6.jpg">
+        <div class="container">
+            <a2>Please fill the parameters below and click on Rental Price button to check the rent of your house </a2>
+    
+    <div class="bg"></div>
+    <p align="center" class="heading"><b>House Rental Price Prediction</b></p>
+    <form action="\predict" method="POST">
+    <div align="center">
+              <div class="b"><b>Type of House</b><br>
+                <select name="type_" class="a">
+            <option value= > ---Please select from below options--- </option>
+            <option value='apartments' > Apartments </option>
+            <option value='houses & villas' > Houses & Villas </option>
+            <option value= 'builder floors' > Builder Floor </option></select>
+            </div>        
+    <br>
+
+    <div class="b"><b>Furnishing Status</b><br>
+     <select name="furnishing" class="a">
+    <option value= > ---Please select from below options--- </option>
+    <option value= 'furnished' > Furnished </option>
+    <option value= 'semi-furnished' > Semi Furnished </option>
+    <option value= 'unfurnished' > Not Furnished </option>
+    </select>
+    <br>
+
+    <div class="b"><b>Property Posted By</b><br>
+     <select name="listed by" class="a">
+    <option value= > ---Please select from below options--- </option>
+    <option value= 'owner' > Owner </option>
+    <option value= 'dealer' > Dealer </option>
+    <option value= 'builder' > Builder </option>
+    </select>
+    <br>
+
+    <div class="b"><b>Total Area in Feets</b><br>
+            <input class="a" type="number" name ="super builtup area (ft²)" required="required"></div>
+    <br>
+    
+    <div class="b"><b>Carpet Area in Feets</b><br>
+            <input class="a" type="number" name ="carpet area (ft²)" required="required"></div>
+    <br>
+
+    <div class="b"><b>number of bedrooms</b><br>
+        <input class="a" type="number" name ="bedrooms" required="required"></div>
+    <br>
+
+    <div class="b"><b>number of bathrooms</b><br>
+        <input class="a" type="number" name ="bathrooms" required="required"></div>
+    <br>
+
+    <div class="b"><b>Car Parking</b><br>
+        <input class="a" type="number" name ="car parking" required="required"></div>
+    <br>
+
+
+    <div class="b"><b>Facing of the House</b><br>
+     <select name="facing" class="a">
+    <option value= > ---Please select from below options--- </option>
+    <option value= 'east' > east </option>
+    <option value= 'north-east' > northeast </option>
+    <option value= 'north' > north </option>
+    <option value= 'west' > west </option>
+    <option value= 'north-west' > northwest </option>
+    <option value= 'south' > south </option>
+    <option value= 'south-east' > southeast </option>
+    <option value= 'south-west' > southwest </option>
+    </select>
+    <br>
+    
+    <div class="b"><b>Floor Number</b><br>
+            <input class="a" type="number" name ="floor no" required="required"></div>
+    <br>
+
+    <div class="b"><b>Total Floors</b><br>
+        <input class="a" type="number" name ="total floors" required="required"></div>
+    <br>
+
+    <div class="b"><b>Maintenance(monthly)</b><br>
+        <input class="a" type="number" name ="maintenance (monthly)" required="required"></div>
+    <br>
+
+    <div class="b"><b>Bachelors Allowed</b><br>
+        <select name="bachelors allowed" class="a">
+       <option value= > ---Please select from below options--- </option>
+       <option value= 'yes' > yes </option>
+       <option value= 'no' > no </option>
+       </select></div>
+       <br>
+
+     <div class="b"><b> Name of the city </b><br>
+                <select name="city" class="a">
+                    <option value= > ---Please select from below options--- </option>
+            <option value='uttam nagar' > Uttam Nagar (DELHI)</option>
+            <option value= 'bhagwati garden' > Bhagwati Garden (DELHI) </option>
+            <option value= 'navi mumbai' > navi mumbai (maharashtra)</option>
+            <option value= 'chennai' > chennai (tamilnadu)</option>
+            <option value= 'coimbatore' > coimbatore (tamilnadu) </option>
+            <option value= 'jaipur' > jaipur (rajasthan) </option>
+            <option value= 'visakhapatnam' > visakhapatnam (andhrapradesh)</option>
+            <option value= 'guwahati' > guwahati (assam) </option>
+            <option value= 'hyderabad' > hyderabad (telangana)</option>
+            <option value= 'noida' > noida (uttarpradesh)</option>
+            <option value= 'bengaluru' > bengaluru (karnataka)</option>
+            <option value= 'mohali' > mohali (punjab)</option>
+            <option value= 'dehradun' > dehradun (uttarakhand)</option>
+            <option value= 'chandigarh airport area' > chandigarh airport area (chandigarh)</option>
+            <option value= 'gurgaon' > gurgaon (haryana)</option>
+            <option value= 'bhopal' > bhopal (madhyapradesh)</option>
+            <option value= 'kolkata' > kolkata (westbengal)</option>
+            <option value= 'haridwar' > haridwar (uttarakhand)</option>
+            <option value= 'zirakpur' > zirakpur (punjab)</option>
+            <option value= 'panchkula' > panchkula (haryana)</option>
+            <option value= 'ahmedabad' > ahmedabad (gujarat)</option>
+            <option value= 'dlf ankur vihar' > dlf ankur vihar (uttarpradesh)</option>
+            <option value= 'durgapur' > durgapur (westbengal)</option>
+            <option value= 'indore' > indore (madhyapradesh)</option>
+            <option value= 'greater noida' > greater noida (uttarpradesh)</option>
+            <option value= 'faridabad' > faridabad (haryana)</option>
+            <option value= 'sector 49' > sector 49 (uttarpradesh)</option>
+            <option value= 'surat' > surat (gujarat)</option>
+            <option value= 'jalandhar' > jalandhar (punjab)</option>
+            <option value= 'vijayawada' > vijayawada (andhrapradesh)</option>
+            <option value= 'thirumala' > thirumala (kerala)</option>
+            <option value= 'margao' > margao (goa) </option>
+            <option value= 'mangaluru' > mangaluru (karnataka)</option>
+            <option value= 'panaji' > panaji (goa)</option>
+            <option value= 'noida extension' > noida extension (uttarpradesh)</option>
+            <option value= 'new chandigarh' > new chandigarh (chandigarh)</option>
+            <option value= 'meenachil' > meenachil</option>
+            <option value= 'vasco da gama' > vasco da gama (goa)</option>
+            <option value= 'edapally' > edapally (kerala)</option>
+            <option value= 'santoshi nagar' > santoshi nagar (chhattisgarh)</option>
+    </select></div>
+    <br> 
+    
+
+
+     <div class="b"><b>State</b><br>
+                <select name="state" class="a">
+                    <option value= > ---Please select from below options--- </option>
+            <option value='delhi' > delhi</option>
+            <option value= 'maharashtra' > maharashtra </option>
+            <option value= 'uttarpradesh' > uttarpradesh </option>
+            <option value= 'chhattisgarh' > chhattisgarh</option>
+            <option value= 'andhrapradesh' > andhrapradesh </option>
+            <option value= 'westbengal' > westbengal </option>
+            <option value= 'haryana' > haryana</option>
+            <option value= 'goa' > goa </option>
+            <option value= 'odisha' > odisha</option>
+            <option value= 'karnataka' > karnataka</option>
+            <option value= 'tamilnadu' > tamilnadu</option>
+            <option value= 'rajasthan' > rajasthan</option>
+            <option value= 'kerala' > kerala</option>
+            <option value= 'madhyapradesh' > madhyapradesh</option>
+            <option value= 'assam' > assam</option>
+            <option value= 'uttarakhand' > uttarakhand</option>
+            <option value= 'telangana' > telangana</option>
+            <option value= 'gujarat' > gujarat</option>
+            <option value= 'punjab' > punjab</option>
+            <option value= 'chandigarh' > chandigarh</option>
+    </select></div>
+    <br>
+
+    <br><br><button id="sub" type="submit ">Rental Price</button>
+    </form>
+    <h3>{{ prediction }}<h3>
+    <br>
+    </div>
+    </body>
+    </html>   
